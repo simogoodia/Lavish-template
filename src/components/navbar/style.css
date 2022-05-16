@@ -1,0 +1,139 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: #3a3e64;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+header .brand a {
+  color: #ddd;
+  font-size: 22px;
+}
+
+header .brand a span {
+  color: #fff;
+  font-weight: 600;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  display: inline-block;
+  margin-left: 60px;
+}
+
+header ul li a {
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+header ul li a:hover:not(.sign-up-link) {
+  color: #f93737;
+}
+
+header ul li a.active {
+  color: #f93737;
+  font-weight: bold;
+}
+
+header a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header i {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+header .fa-bars,
+header .fa-xmark {
+  display: none;
+}
+
+header .sign-up-btn {
+  border: 1px solid #fff;
+  padding: 7px 13px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+header .sign-up-btn a {
+  color: #fff;
+}
+
+header .sign-up-btn:hover {
+  background: #fff;
+}
+
+header .sign-up-btn:hover a {
+  color: #000;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+  header .fa-bars,
+  header .fa-xmark {
+    display: block;
+  }
+  header ul {
+    z-index: 100;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: -100%;
+    height: 100vh;
+    background-color: #3a3e64;
+    -webkit-transition: left 0.3s ease-in-out;
+    transition: left 0.3s ease-in-out;
+    text-align: center;
+    padding: 50px 20px 0 20px;
+  }
+  header ul li {
+    margin: 0;
+    display: block;
+  }
+  header ul li:not(:last-child), header ul li:not(:first-child) {
+    margin-bottom: 60px;
+  }
+  header ul.show {
+    left: 0;
+  }
+  header ul .sign-up-btn {
+    padding: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

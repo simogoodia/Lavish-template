@@ -1,0 +1,98 @@
+footer {
+  background-color: #3a3e64;
+  color: #ffffff;
+  padding-top: 60px;
+  text-align: center;
+}
+
+footer .row {
+  text-align: start;
+}
+
+footer .input input {
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+footer .input input:focus {
+  outline: 0;
+}
+
+footer .input button {
+  border: 1px solid #fff;
+  padding: 7px 13px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 10px 20px;
+}
+
+footer .input button a {
+  color: #fff;
+}
+
+footer .input button:hover {
+  background: #fff;
+}
+
+footer .input button:hover a {
+  color: #000;
+}
+
+footer .input button:hover {
+  color: #000;
+}
+
+footer ul {
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+
+footer ul li {
+  cursor: pointer;
+}
+
+footer .end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px 0;
+}
+
+footer .end a {
+  color: #fff;
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+}
+
+footer .end span {
+  font-size: 10px;
+}
+
+footer .end .icons i {
+  cursor: pointer;
+}
+
+footer .end .icons i:not(:first-child) {
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 991px) {
+  footer .row {
+    text-align: center;
+  }
+  footer .row div:not(:first-child) h2 {
+    margin-top: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

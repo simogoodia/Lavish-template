@@ -1,0 +1,121 @@
+.pricing {
+  margin-bottom: 60px;
+  padding-top: 60px;
+}
+
+.pricing .h2 {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.pricing .price {
+  background: #266AFB;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 7px;
+  -webkit-box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.4);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.pricing .price:not(:last-child) {
+  margin-right: 20px;
+}
+
+.pricing .price:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.pricing .price.gold {
+  background-color: #444;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+.pricing .price.gold button {
+  background-color: #266AFB;
+  border: 0;
+  padding: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-family: inherit;
+  border-radius: 7px;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.pricing .price.gold button:focus {
+  outline: 0;
+}
+
+.pricing .price.gold button:hover {
+  background: #cb2121;
+}
+
+.pricing .price.gold:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.pricing .price i {
+  font-size: 60px;
+}
+
+.pricing .price h4,
+.pricing .price h1 {
+  font-weight: bold;
+}
+
+.pricing .price h1 {
+  font-size: 40px;
+}
+
+.pricing .price ul {
+  margin: 0;
+  padding: 0;
+}
+
+.pricing .price button {
+  background-color: #444;
+  border: 0;
+  padding: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-family: inherit;
+  border-radius: 7px;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.pricing .price button:focus {
+  outline: 0;
+}
+
+.pricing .price button:hover {
+  background: #cb2121;
+}
+
+@media screen and (max-width: 991px) {
+  .pricing .price:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .pricing .price.gold {
+    background-color: #444;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .pricing .price.gold:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+/*# sourceMappingURL=style.css.map */

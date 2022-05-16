@@ -1,0 +1,75 @@
+@import "../../global/sass/variables";
+@import "../../global/sass/mixins";
+
+.pricing {
+    margin-bottom: 60px;
+    padding-top: 60px;
+    .h2 {
+        margin-top: 60px;
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    .price {
+        background: $sd-color;
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+        border-radius: 7px;
+        @include box-shadow;
+        transition: transform 0.3s;
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+        &:hover {
+            transform: scale(1.1);
+        }
+        // Price Gold
+        &.gold {
+            background-color: #444;
+            transform: translateY(-15px);
+            button {
+                @include btn("Gold");
+            }
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        // Price Gold
+        i {
+            font-size: 60px;
+        }
+        h4,
+        h1 {
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        button {
+            @include btn("Black");
+            width: 100%;
+        }
+    }
+}
+
+// Media
+@media screen and (max-width: $md-screen) {
+    .pricing {
+        .price:hover {
+            transform: scale(1.1);
+        }
+        .price.gold {
+            background-color: #444;
+            transform: translateY(0);
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+// Media

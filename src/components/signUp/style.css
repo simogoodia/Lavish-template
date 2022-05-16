@@ -1,0 +1,59 @@
+.sign-up {
+  background-color: #fff;
+  color: #111;
+  padding: 100px 0;
+  min-height: 100vh;
+}
+
+.sign-up .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sign-up .col-one img {
+  max-width: 100%;
+}
+
+.sign-up .col-two h4 {
+  color: red;
+  font-size: 16px;
+}
+
+.sign-up .col-two h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.sign-up .col-two button {
+  background-color: #266AFB;
+  border: 0;
+  padding: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-family: inherit;
+  border-radius: 7px;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.sign-up .col-two button:focus {
+  outline: 0;
+}
+
+.sign-up .col-two button:hover {
+  background: #cb2121;
+}
+
+@media screen and (max-width: 991px) {
+  .sign-up {
+    padding-top: 100px;
+  }
+  .sign-up .row .col-one {
+    margin-bottom: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
