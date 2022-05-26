@@ -1,2 +1,1 @@
 # lavish-template
-"# Lavish Template" 
